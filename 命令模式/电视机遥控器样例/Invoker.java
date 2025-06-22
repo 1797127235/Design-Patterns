@@ -1,17 +1,17 @@
-package 命令模式;
+package 命令模式.电视机遥控器样例;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Waitor {
-    private List<Command> commands=new ArrayList<Command>();
-
-    public void setCommand(Command command) {
+public class Invoker {
+    private List<Command> commands=new ArrayList<>();
+    public void setCommand(Command command)
+    {
         commands.add(command);
     }
-
-    public void notifyCommand() {
-        System.out.println("通知厨师");
+    
+    public void executeCommands()
+    {
         for(Command command:commands)
         {
             if(command!=null)

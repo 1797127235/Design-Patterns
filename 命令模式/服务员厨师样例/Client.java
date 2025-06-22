@@ -1,4 +1,4 @@
-package 命令模式;
+package 命令模式.服务员厨师样例;
 
 public class Client {
     public static void main(String[] args) {
@@ -10,6 +10,7 @@ public class Client {
         order2.setFoodDir("炒饭", 2);
 
         SeniorChef seniorChef=new SeniorChef();
+        //创建命令
         OrderCommand command1=new OrderCommand();
         OrderCommand  command2=new OrderCommand();
         command1.setReceiver(seniorChef);
@@ -18,6 +19,7 @@ public class Client {
         command1.setOrder(order1);
         command2.setOrder(order2);
 
+        //创建服务员 Invoker类
         Waitor waitor=new Waitor();
         waitor.setCommand(command1);
         waitor.setCommand(command2);

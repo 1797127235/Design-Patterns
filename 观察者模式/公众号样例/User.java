@@ -1,4 +1,4 @@
-package 观察者模式;
+package 观察者模式.公众号样例;
 
 public class User implements Observer {
     private String name;

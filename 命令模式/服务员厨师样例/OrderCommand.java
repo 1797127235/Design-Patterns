@@ -1,4 +1,6 @@
-package 命令模式;
+package 命令模式.服务员厨师样例;
+
+//具体命令类
 public class OrderCommand  implements Command{
     private Order order;
     private SeniorChef receiver;
