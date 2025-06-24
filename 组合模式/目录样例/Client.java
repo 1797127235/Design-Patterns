@@ -1,4 +1,4 @@
-package 组合模式;
+package 组合模式.目录样例;
 
 public class Client {
     public static void main(String[] args) {
